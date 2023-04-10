@@ -10,3 +10,5 @@ login local
 exit
 username indika secret ccna
 
+In windows,
+  arp -d * => clears the arp cache
