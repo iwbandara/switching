@@ -1,0 +1,12 @@
+enable
+configure terminal
+hostname -------
+enable secret ccna
+service password-encryption
+line console 0
+login local
+line vty 0 4
+login local
+exit
+username indika secret ccna
+
