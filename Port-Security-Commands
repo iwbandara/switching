@@ -1,0 +1,7 @@
+Port Security commands;
+
+	switchport port-security => commands enable to the port-security feature on an interface. 
+
+	errdisable recovery cause psecure-violation => a global command to enable automatic recovery for interface in an err-disabled state of port security
+	
+	errdisable violation interval <seconds> => sets a time interval
