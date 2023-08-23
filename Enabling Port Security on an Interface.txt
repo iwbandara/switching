@@ -1,0 +1,12 @@
+Enabling Port Security on an Interface:
+=======================================
+
+	SW1(config)# interface g0/1
+
+	SW1(config-if)# switchport port-security // enables the feature on the interface
+
+	SW1(config-if)# switchport port-security maximum 1 // enables to add only one device
+
+	SW1(config-if)# switchport port-security mac-address sticky // add the MAC address automatically
+
+	SW1(config-if)# switchport port-security violation sutdown // Shutdown the interface if a violation happens
