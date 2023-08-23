@@ -1,0 +1,58 @@
+Switch & Router Basic Configurations:
+=====================================
+
+=> How to set the Hostname:
+	
+	Switch> enable
+	Switch# configure terminal
+	Switch(config)# hostname FLOOR-01-SW-01
+
+=> How to set the Console password:
+
+	Switch(config)# line console 0
+	Switch(config-line)# password cisco123
+	Switch(config-line)# login
+
+=> How to set the login Banner:
+
+	Switch(config)# banner login # CCNA Studies #
+
+=> How to configure SSH in a router:
+
+	Router(config)# username indika password ccna
+	Router(config)# line vty 0 15
+	Router(config-line)# login local
+
+	Router(config)# ip domain-name ccna.com
+
+	Router(config)# crypto key generate rsa [360-4096] // 512 is the default value
+	Router(config)# transport input all|none|telnet|ssh
+
+=> How to display existing VLANs on a Switch:
+
+	Switch# show vlan 
+	Switch# show vlan brief
+
+** By default all switch ports are assigned to VLAN 1.
+** VLAN 1 cannot be removed from the switch.
+
+=> How to configure Port Security:
+
+	** Switch ports must be Access ports to enable port security.
+
+	SW# configure terminal
+	SW(conf)# interface g0/0
+	SW(conf-if)# switchport mode access	SW(conf-if)# switchport port-security
+	SW(conf-if)# switchport port-security violation shutdown|restrict|protect
+	SW(conf-if)# switchport port-security maximum 1
+	SW(conf-if)# switchport port-security sticky
+
+** Port security verification commands;
+
+	SW1# show port-security
+
+	SW1# show port-security interface fa0/1
+
+	SW1# show port-security address
+
+
