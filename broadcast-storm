@@ -1,0 +1,2 @@
+A Broadcast storm is where a switch forwards a broadcast out all ports except the port the broadcast was received on and when you have two links between switches 
+the broadcast goes back and forth until the links get overwhelmed with broadcast traffic.
