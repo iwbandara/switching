@@ -13,6 +13,7 @@ VLAN Trunking Protocol (VTP):
 
 	Switch(config)# vtp version 2 (default version 1)
 	Switch(config)# vtp domain CCNA
+	Switch(config)# vtp mode [Client| Transparent | server]
 
 => Verification:
 
