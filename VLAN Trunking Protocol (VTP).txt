@@ -1,0 +1,19 @@
+VLAN Trunking Protocol (VTP):
+=============================
+
+=> Enable to propagate VLAN information among the Switches in the network.
+
+=> There are three types of modes:
+
+	1. Server (default)
+	2. Client
+	3. Transparent
+
+=> Configuration:
+
+	Switch(config)# vtp version 2 (default version 1)
+	Switch(config)# vtp domain CCNA
+
+=> Verification:
+
+	Switch# show vtp status
