@@ -12,6 +12,15 @@ Switch & Router Basic Configurations:
 	Switch(config)# line console 0
 	Switch(config-line)# password cisco123
 	Switch(config-line)# login
+=> How add User accounts to local databse
+
+	Switch(config)# username indika password cisco // password added in plain text
+
+	Switch(config)# username indika secret cisco // password added as encrypted text
+
+=> How to set the Message of the Day (MOTD) Banner:
+
+	Switch(config)# banner motd # Peaceful Day for ALL #
 
 => How to set the login Banner:
 
