@@ -1,4 +1,7 @@
-Port Security commands;
+=> Port security can only be enable on access or trunk ports. If you try to enable on a dynamic port, 
+   "Command rejected: <port_number> is a dynamic port." error messgae get displayed.
+
+=> Port Security commands;
 
 	switchport port-security => commands enable the port-security feature on an interface. 
 
