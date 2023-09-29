@@ -18,3 +18,9 @@
 	errdisable recovery cause psecure-violation => a global command to enable automatic recovery for interface in an err-disabled state of port security
 	
 	errdisable violation interval <seconds> => sets a time interval
+
+=> Port Security Verification:
+
+	# show port-security interface <interface_number> // This will display more insight information specifically for the specified interface.
+
+	# show port-security // Display a normal overview of configurations
