@@ -1,9 +1,15 @@
 => Port security can only be enable on access or trunk ports. If you try to enable on a dynamic port, 
    "Command rejected: <port_number> is a dynamic port." error messgae get displayed.
 
+=> Default port violation mode is 'Shutdown'.
+
+=> By default only a single MAC Address can be learnt by a switch port.
+
 => Port Security commands;
 
 	switchport port-security => commands enable the port-security feature on an interface. 
+
+	switchport port-security maximum <number> // Overwrites the default number of 1
 
 	errdisable recovery cause psecure-violation => a global command to enable automatic recovery for interface in an err-disabled state of port security
 	
