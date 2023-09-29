@@ -7,9 +7,13 @@
 
 => Port Security commands;
 
-	switchport port-security => commands enable the port-security feature on an interface. 
+	switchport port-security // Commands enable the port-security feature on an interface. 
 
 	switchport port-security maximum <number> // Overwrites the default number of 1
+
+	switchport port-security mac-address sticky // Dynamically learn the MAC addresses of connected devices.
+
+	switchport port-security violation [restrict | protect | shutdown] // Sets the violation mode for one of the three mentioned.
 
 	errdisable recovery cause psecure-violation => a global command to enable automatic recovery for interface in an err-disabled state of port security
 	
