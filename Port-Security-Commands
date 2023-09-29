@@ -24,3 +24,7 @@
 	# show port-security interface <interface_number> // This will display more insight information specifically for the specified interface.
 
 	# show port-security // Display a normal overview of configurations
+
+	# show mac address-table secure // Lists MAC addresses associated with ports that use port security
+
+	# show mac address-table static // Lists MAC addresses associated with ports that use port security, as well as any other statically defined MAC addresses
