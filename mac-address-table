@@ -1,2 +1,8 @@
 => # show mac address-table // Display the entire mac address table in a Switch
 
+=> # show mac address-table dynamic // Display all the mac addresses learnt Dynamically.
+
+=> # show mac address-table static // Display all the mac addresses configured manually.
+
+=> # clear mac address-table // Clears the entire mac address table
+
