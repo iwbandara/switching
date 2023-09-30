@@ -6,3 +6,5 @@
 
 => # clear mac address-table // Clears the entire mac address table
 
+=> # show mac address-table interface <interface_number> // Display all the mac addresses learnt through the specified interface of the Switch
+
