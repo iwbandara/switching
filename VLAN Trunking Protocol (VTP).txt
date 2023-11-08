@@ -18,3 +18,7 @@ VLAN Trunking Protocol (VTP):
 => Verification:
 
 	Switch# show vtp status
+
+=> Enabling VTP debugging:
+
+	Switch# debug sh-vlan vtp [events | packets | etc]
