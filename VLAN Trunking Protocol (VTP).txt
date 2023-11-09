@@ -22,3 +22,5 @@ VLAN Trunking Protocol (VTP):
 => Enabling VTP debugging:
 
 	Switch# debug sh-vlan vtp [events | packets | etc]
+
+** If you change VTP mode from SERVER to TRANSPARENT, the reviosn value will be reset to 0 while no changes to the existing VLANs.
