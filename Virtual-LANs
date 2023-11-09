@@ -1,0 +1,46 @@
+Adding VLANs to a Switch:
+=========================
+
+  Switch(config)# vlan <vlan-number>
+  Switch(config-vlan)# name <vlan-name>
+  Switch(config-vlan)# exit
+
+Example:
+  SW1(config)# vlan 100 // creates VLAN 100
+  SW1(config-vlan)# name ENGINEERS // given the name ENGINEERS to the VLAN 100
+
+How to Assign ports to a VLAN:
+==============================
+
+A single port:
+--------------
+  SW1(config)# interface <interface-number>
+  SW1(config-if)# switchport mode access
+  SW1(config-if)# switchport access vlan <vlan-number>
+
+A range of ports:
+--------------
+  SW1(config)# interface range <start-interface-number>-<end-interface-number>
+  SW1(config-if-range)# switchport mode access
+  SW1(config-if-range)# switchport access vlan <vlan-number>
+
+Example:
+  
+  SW1(config)# interface FastEthernet0/1
+  SW1(config-if)# switchport mode access
+  SW1(config-if)# switchport access vlan 10 // adds the port to VLAN 10
+
+  SW1(config)# interface range FastEthernet0/1-10
+  SW1(config-if-range)# switchport mode access
+  SW1(config-if-range)# switchport access vlan 10 // adds the port fa0/1 to 10 to VLAN 10
+
+Verification:
+=============
+
+SW1# show vlan // display all the VLAN related information in the Switch
+  
+SW1# show vlan brief // display  a list of VLANs
+
+  SW1# show vlan id 10 // display VLAN related information for the specified VLAN.
+
+
