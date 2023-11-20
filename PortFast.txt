@@ -1,0 +1,21 @@
+PortFast:
+=========
+
+=> A feature used to avoid listening & learning states of switch ports. Which normally takes 30 seconds.
+
+=> After enabling PortFast on a switch port it directly jumps to forwarding state.
+
+=> Can be configured in two methods:
+	1. Per-port:
+		SW(config)# interface fa0/1
+		SW(config-if)# spanning-tree portfast		
+
+	2. Globally:
+		SW(config)# spanning-tree portfast default
+
+			This will only activate portfast feature on Access ports.
+
+=> The following method is used to disable portfast on a specific interface;
+
+	SW(config)# interface fa0/1
+	SW(config-if)# spanning-tree portfase disable
