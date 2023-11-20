@@ -19,3 +19,7 @@ PortFast:
 
 	SW(config)# interface fa0/1
 	SW(config-if)# spanning-tree portfase disable
+
+=> The following command is used to verify portfast on a specific interface (fa0/1),
+
+	Switch# show spanning-tree interface fa0/1 portfast
