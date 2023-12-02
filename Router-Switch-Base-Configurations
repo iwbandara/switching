@@ -1,3 +1,8 @@
+Modes in a Switch/Router:
+  1. User EXEC mode (Switch>)
+  2. Privileged EXEC mode / Enable mode (Switch#)
+  3. Global configuration mode (Switch(config)#)
+
 enable
 configure terminal
 hostname -------
