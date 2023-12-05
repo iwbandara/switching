@@ -8,3 +8,12 @@
 
 => # show mac address-table interface <interface_number> // Display all the mac addresses learnt through the specified interface of the Switch
 
+=> By default MAC Addresses are learnt dynamically and they will be removed from the table after 300 seconds if no traffic.
+
+=> You can manually set the aging time;
+
+    SW01# mac address-table aging-time <time-in-seconds>
+
+=> To avoid removing the entires from the MAC Address table, we can add it statically using the below command;
+
+    SW01# mac address-table static <mac-address> vlan <vlan-no> interface <interface_name>
