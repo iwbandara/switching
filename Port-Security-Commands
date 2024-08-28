@@ -5,21 +5,23 @@
 
 => By default only a single MAC Address can be learnt by a switch port.
 
-=> Port Security commands;
+=> Port Security commands:
+   =======================
 
-	switchport port-security // Commands enable the port-security feature on an interface. 
+	Switch(config-if)# switchport port-security // Command enables the port-security feature on an interface. 
 
-	switchport port-security maximum <number> // Overwrites the default number of 1
+	Switch(config-if)# switchport port-security maximum <number> // Overwrites the default number of 1
 
-	switchport port-security mac-address sticky // Dynamically learn the MAC addresses of connected devices.
+	Switch(config-if)# switchport port-security mac-address sticky // Dynamically learn the MAC addresses of connected devices.
 
-	switchport port-security violation [restrict | protect | shutdown] // Sets the violation mode for one of the three mentioned.
+	Switch(config-if)# switchport port-security violation [restrict | protect | shutdown] // Sets the violation mode for one of the three mentioned.
 
-	errdisable recovery cause psecure-violation => a global command to enable automatic recovery for interface in an err-disabled state of port security
+	Switch(config)# errdisable recovery cause psecure-violation => a global command to enable automatic recovery for interface in an err-disabled state of port security
 	
-	errdisable violation interval <seconds> => sets a time interval
+	Switch(config)# errdisable violation interval <seconds> => sets a time interval
 
 => Port Security Verification:
+   ===========================
 
 	# show port-security interface <interface_number> // This will display more insight information specifically for the specified interface.
 
