@@ -1,0 +1,8 @@
+Spanning Tree Protocol (STP):
+-----------------------------
+
+  => STP is used as a loop prevention mechanism in switches.
+
+  => When multiple switches are connected with redundant links they will share BPDUs between switches creating a loop.
+
+  => 
